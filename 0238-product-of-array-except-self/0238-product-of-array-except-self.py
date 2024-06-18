@@ -22,7 +22,7 @@ class Solution:
             elif nums[i] == 0: 
                 l.append(total)            
             elif flag == 0:
-                l.append(total_zero)
+                l.append(total_zero//nums[i])
             else:
                 l.append(total//nums[i])
             i += 1
