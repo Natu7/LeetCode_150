@@ -7,4 +7,4 @@ class Solution:
             d[i] = nums.count(i)
         d_sorted = dict( sorted(d.items(), key=operator.itemgetter(1),  reverse=True))
         l = list(d_sorted.keys())
-        return l[0:k]
+        return l[:k]
